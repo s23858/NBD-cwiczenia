@@ -1,0 +1,410 @@
+﻿[
+  {
+    "actors.name": "Keanu Reeves",
+    "count(films)": 7
+  },
+  {
+    "actors.name": "Carrie-Anne Moss",
+    "count(films)": 3
+  },
+  {
+    "actors.name": "Laurence Fishburne",
+    "count(films)": 3
+  },
+  {
+    "actors.name": "Hugo Weaving",
+    "count(films)": 5
+  },
+  {
+    "actors.name": "Emil Eifrem",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Charlize Theron",
+    "count(films)": 2
+  },
+  {
+    "actors.name": "Al Pacino",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Tom Cruise",
+    "count(films)": 3
+  },
+  {
+    "actors.name": "Jack Nicholson",
+    "count(films)": 5
+  },
+  {
+    "actors.name": "Demi Moore",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Kevin Bacon",
+    "count(films)": 3
+  },
+  {
+    "actors.name": "Kiefer Sutherland",
+    "count(films)": 2
+  },
+  {
+    "actors.name": "Noah Wyle",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Cuba Gooding Jr.",
+    "count(films)": 4
+  },
+  {
+    "actors.name": "Kevin Pollak",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "J.T. Walsh",
+    "count(films)": 2
+  },
+  {
+    "actors.name": "James Marshall",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Christopher Guest",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Aaron Sorkin",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Kelly McGillis",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Val Kilmer",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Anthony Edwards",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Tom Skerritt",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Meg Ryan",
+    "count(films)": 5
+  },
+  {
+    "actors.name": "Renee Zellweger",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Kelly Preston",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Jerry O'Connell",
+    "count(films)": 2
+  },
+  {
+    "actors.name": "Jay Mohr",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Bonnie Hunt",
+    "count(films)": 2
+  },
+  {
+    "actors.name": "Regina King",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Jonathan Lipnicki",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "River Phoenix",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Corey Feldman",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Wil Wheaton",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "John Cusack",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Marshall Bell",
+    "count(films)": 2
+  },
+  {
+    "actors.name": "Helen Hunt",
+    "count(films)": 3
+  },
+  {
+    "actors.name": "Greg Kinnear",
+    "count(films)": 2
+  },
+  {
+    "actors.name": "Annabella Sciorra",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Max von Sydow",
+    "count(films)": 2
+  },
+  {
+    "actors.name": "Werner Herzog",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Robin Williams",
+    "count(films)": 3
+  },
+  {
+    "actors.name": "Ethan Hawke",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Rick Yune",
+    "count(films)": 2
+  },
+  {
+    "actors.name": "James Cromwell",
+    "count(films)": 2
+  },
+  {
+    "actors.name": "Parker Posey",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Dave Chappelle",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Steve Zahn",
+    "count(films)": 2
+  },
+  {
+    "actors.name": "Tom Hanks",
+    "count(films)": 12
+  },
+  {
+    "actors.name": "Rita Wilson",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Bill Pullman",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Victor Garber",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Rosie O'Donnell",
+    "count(films)": 2
+  },
+  {
+    "actors.name": "Nathan Lane",
+    "count(films)": 2
+  },
+  {
+    "actors.name": "Billy Crystal",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Carrie Fisher",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Bruno Kirby",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Liv Tyler",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Brooke Langton",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Gene Hackman",
+    "count(films)": 3
+  },
+  {
+    "actors.name": "Orlando Jones",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Christian Bale",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Zach Grenier",
+    "count(films)": 2
+  },
+  {
+    "actors.name": "Richard Harris",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Clint Eastwood",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Takeshi Kitano",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Dina Meyer",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Ice-T",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Halle Berry",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Jim Broadbent",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Ian McKellen",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Audrey Tautou",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Paul Bettany",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Natalie Portman",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Stephen Rea",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "John Hurt",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Ben Miles",
+    "count(films)": 3
+  },
+  {
+    "actors.name": "Emile Hirsch",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "John Goodman",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Susan Sarandon",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Matthew Fox",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Christina Ricci",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Rain",
+    "count(films)": 2
+  },
+  {
+    "actors.name": "Naomie Harris",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Michael Clarke Duncan",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "David Morse",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Sam Rockwell",
+    "count(films)": 2
+  },
+  {
+    "actors.name": "Gary Sinise",
+    "count(films)": 2
+  },
+  {
+    "actors.name": "Patricia Clarkson",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Frank Langella",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Michael Sheen",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Oliver Platt",
+    "count(films)": 2
+  },
+  {
+    "actors.name": "Danny DeVito",
+    "count(films)": 2
+  },
+  {
+    "actors.name": "John C. Reilly",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Ed Harris",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Bill Paxton",
+    "count(films)": 3
+  },
+  {
+    "actors.name": "Philip Seymour Hoffman",
+    "count(films)": 2
+  },
+  {
+    "actors.name": "Diane Keaton",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Julia Roberts",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Madonna",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Geena Davis",
+    "count(films)": 1
+  },
+  {
+    "actors.name": "Lori Petty",
+    "count(films)": 1
+  }
+]

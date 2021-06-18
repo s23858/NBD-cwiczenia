@@ -1,0 +1,72 @@
+1. 
+MATCH (movie) WHERE (movie:Movie)
+RETURN movie
+
+2. 
+MATCH (hugo:Person {name: "Hugo Weaving"})-[:ACTED_IN]->(hugoWeavingMovie) 
+RETURN hugo,hugoWeavingMovie
+
+3. 
+MATCH (hugo:Person {name: "Hugo Weaving"})-[:ACTED_IN]->(hugoWeavingMovie)<-[:DIRECTED]-(directors) 
+RETURN directors
+
+4.
+MATCH (Person {name:"Hugo Weaving"})-[:ACTED_IN]->(a)<-[:ACTED_IN]-(hugoWeavingCoactors) 
+RETURN DISTINCT hugoWeavingCoactors
+
+5.
+MATCH (movie:Movie {title: "The Matrix"})<-[:ACTED_IN]-(matrixActors)-[:ACTED_IN]->(matrixActorsMovies)
+RETURN matrixActorsMovies
+
+6.
+MATCH (actors:Person)-[:ACTED_IN]->(films)
+RETURN actors.name, count(films)
+
+7.
+MATCH (person:Person)-[:DIRECTED]->(film)<-[:WROTE]-(person) 
+RETURN person.name, film.title
+
+8.
+MATCH (hugo:Person {name: "Hugo Weaving"})-[:ACTED_IN]->(film)<-[:ACTED_IN]-(keanu:Person {name: "Keanu Reeves"}) 
+RETURN film.title
+
+9.
+CREATE (CapitanAmerica:Movie {title:'Captain America: The First Avenger', released:2011, tagline:'The first America'})
+CREATE (ChrisEvans :Person {name:'Chris Evans', born:1981})
+CREATE (HayleyAtwell :Person {name:'Hayley Atwell', born:1982})
+CREATE (SebastianStan :Person {name:'Sebastian Stan', born:1982})
+CREATE (TommyLeeJones :Person {name:'Tommy Lee Jones', born:1946})
+CREATE (DominicCooper :Person {name:'Dominic Cooper', born:1978})
+CREATE (RichardArmitage :Person {name:'Richard Armitage', born:1971})
+CREATE (StanleyTucci :Person {name:'Stanley Tucci', born:1960})
+CREATE (SamuelL :Person {name:'Jackson Samuel L. Jackson', born:1948})
+CREATE (TobyJones :Person {name:'Toby Jones', born:1966})
+CREATE (NealMcDonough :Person {name:'Neal McDonough', born:1966})
+CREATE (DerekLuke :Person {name:'Derek Luke', born:1974})
+CREATE (KennethChoi :Person {name:'Kenneth Choi', born:1971})
+CREATE (JJFeild :Person {name:'JJ Feild', born:1978})
+CREATE (ChristopherMarkus :Person {name:'Christopher Markus', born:1968})
+CREATE (StephenMcFeely :Person {name:'Stephen McFeely', born:1974})
+CREATE (JoeJohnston :Person {name:'Joe Johnston', born:1950})
+
+CREATE
+    (HugoWeaving)-[:ACTED_IN {roles:['Johann Schmidt, Red Skull']}]->(CapitanAmerica),
+    (ChrisEvans)-[:ACTED_IN {roles:['Captain America']}]->(CapitanAmerica),
+    (HayleyAtwell)-[:ACTED_IN {roles:['Peggy Carter']}]->(CapitanAmerica),
+    (SebastianStan)-[:ACTED_IN {roles:['James Buchanan Bucky Barnes']}]->(CapitanAmerica),
+    (TommyLeeJones)-[:ACTED_IN {roles:['Colonel Chester Phillips']}]->(CapitanAmerica),
+    (DominicCooper)-[:ACTED_IN {roles:['Howard Stark']}]->(CapitanAmerica),
+    (RichardArmitage)-[:ACTED_IN {roles:['Heinz Kruger']}]->(CapitanAmerica),
+    (StanleyTucci)-[:ACTED_IN {roles:['Dr. Abraham Erskine']}]->(CapitanAmerica),
+    (SamuelL)-[:ACTED_IN {roles:['Nick Fury']}]->(CapitanAmerica),
+    (TobyJones)-[:ACTED_IN {roles:['Dr. Arnim Zola']}]->(CapitanAmerica),
+    (NealMcDonough)-[:ACTED_IN {roles:['Timothy Dum Dum Dugan']}]->(CapitanAmerica),
+    (DerekLuke)-[:ACTED_IN {roles:['Gabe Jones']}]->(CapitanAmerica),
+    (KennethChoi)-[:ACTED_IN {roles:['Jim Morita']}]->(CapitanAmerica),
+    (JJFeild)-[:ACTED_IN {roles:['James Montgomery Falsworth']}]->(CapitanAmerica),
+    (ChristopherMarkus)-[:WROTE]->(CapitanAmerica),
+    (StephenMcFeely)-[:WROTE]->(CapitanAmerica),
+    (JoeJohnston)-[:DIRECTED]->(CapitanAmerica)
+    
+MATCH (people:Person)-[relatedTo]->(movie:Movie {title: "Captain America: The First Avenger"})
+RETURN people
