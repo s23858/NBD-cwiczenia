@@ -1,0 +1,39 @@
+Czesc I
+1. 
+MATCH paths=allShortestPaths((from{name:"Darjeeling"})-[*]->(to{name:"Sandakphu"})) 
+RETURN paths
+
+2. 
+MATCH (from{name:"Darjeeling"})-[*{winter:"true"}]->(to{name:"Sandakphu"}), paths = allShortestPaths((from)-[*]-(to)) 
+RETURN paths
+
+3.
+MATCH paths = (from{name:"Darjeeling"})-[*]->(to{name:"Sandakphu"}) 
+RETURN paths, reduce(i=0, n IN relationships(paths) | i+n.distance) AS totalDist 
+ORDER BY totalDist
+
+MATCH (from{name:"Darjeeling"})-[r:twowheeler]-(to)
+WHERE r.summer = "true"
+RETURN to
+
+Czesc II
+4.
+MATCH (airport:Airport)-[:ORIGIN]-(flight:Flight) 
+RETURN airport, count(*) as NumberOfFlights ORDER BY NumberOfFlights
+
+5.
+MATCH (originAirport:Airport)<-[:ORIGIN]-(flight:Flight)-[:DESTINATION]->(destAirport:Airport), (flight)<-[:ASSIGN]-(ticket:Ticket)
+CREATE (originAirport)-[:CITY_CONNECTION {airline: flight.airline, dateOfFlight: flight.date, distance: flight.distance, duration: flight.duration, name: flight.name, price: ticket.price, class:ticket.class}]->(destAirport)
+
+MATCH (airport:Airport {name: "LAX"})-[connection:CITY_CONNECTION*..2]-> (destinationAirport:Airport)
+WHERE REDUCE(totalCost = 0, con in connection | totalCost + con.price) < 3000 AND destinationAirport.name <> "LAX" RETURN distinct destinationAirport
+
+6.
+MATCH path = (airport:Airport {name: "LAX"})-[connection:CITY_CONNECTION*..2]->(destinationAirport:Airport {name: "DAY"})
+WITH path, REDUCE(totalCost = 0, con in connection | totalCost + con.price) as totalPrice
+RETURN path, totalPrice
+
+7.
+MATCH path = (originAirport:Airport {name: "LAX"})-[cheapest:CHEAPEST_CONNECTION*..2]->(finalAirport:Airport {name: "DAY"}) RETURN path
+
+
