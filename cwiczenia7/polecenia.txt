@@ -1,0 +1,33 @@
+1. 
+curl -i -XPUT -H 'Content-Type:application/json' -d '{"firstName": "Michal", "lastName": "Szybki", "age": 23, "weight": 75}' http://localhost:8098/buckets/s23858/keys/Szybki
+curl -i -XPUT -H 'Content-Type:application/json' -d '{"firstName": "Aga", "lastName": "Wesola", "age": 54, "weight": 56}' http://localhost:8098/buckets/s23858/keys/Wesola
+curl -i -XPUT -H 'Content-Type:application/json' -d '{"firstName": "Piotr", "lastName": "Wysoki", "age": 89, "weight": 78}' http://localhost:8098/buckets/s23858/keys/Wysoki
+curl -i -XPUT -H 'Content-Type:application/json' -d '{"firstName": "Ola", "lastName": "Miasteczkowa", "age": 12, "weight": 73}' http://localhost:8098/buckets/s23858/keys/Miasteczkowa
+curl -i -XPUT -H 'Content-Type:application/json' -d '{"firstName": "Iza", "lastName": "Zaradna", "age": 4, "weight": 23}' http://localhost:8098/buckets/s23858/keys/Zaradna
+
+2. 
+curl -i http://localhost:8098/buckets/s23858/keys/Wysoki
+
+3. 
+curl -i -XPUT -H 'Content-Type:application/json' -d '{"firstName": "Aga", "lastName": "Wesola", "age": 54, "weight": 56, "height": 172}' http://localhost:8098/buckets/s23858/keys/Wesola
+
+4.
+curl -i -XPUT -H 'Content-Type:application/json' -d '{"firstName": "Iza", "lastName": "Zaradna", "weight": 23}' http://localhost:8098/buckets/s23858/keys/Zaradna
+
+5.
+curl -i -XPUT -H 'Content-Type:application/json' -d '{"firstName": "Kinga", "lastName": "Miasteczkowa", "age": 12, "weight": 73}' http://localhost:8098/buckets/s23858/keys/Miasteczkowa
+
+6.
+curl -i -XDELETE http://localhost:8098/buckets/s23858/keys/Zaradna
+
+7.
+curl -i http://localhost:8098/buckets/s23858/keys/Zaradna
+
+8.
+curl -i -XPOST -H 'Content-Type:application/json' -d '{"firstName": "Kiwi"}' http://localhost:8098/buckets/s23858/keys/Kiwi
+
+9.
+curl -i http://localhost:8098/buckets/s23858/keys/Kiwi
+
+10.
+curl -i -XDELETE http://localhost:8098/buckets/s23858/keys/Kiwi

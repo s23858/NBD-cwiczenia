@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+X-Riak-Vclock: a85hYGBgzGDKBVI8+xkWvl++asokIJs5gymRMY+VIbl+yhW+LAA=
+Vary: Accept-Encoding
+Server: MochiWeb/1.1 WebMachine/1.10.9 (cafe not found)
+Link: </buckets/s23858>; rel="up"
+Last-Modified: Thu, 24 Jun 2021 18:30:15 GMT
+ETag: "2xNlURkIgS9fpzCuFqQzjK"
+Date: Thu, 24 Jun 2021 18:33:28 GMT
+Content-Type: application/json
+Content-Length: 15
+
+{"name":"Kiwi"}
